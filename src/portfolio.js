@@ -447,7 +447,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "animated_ashutosh.png",
     email:
-      "Phone: 🇸🇪+46760372563",
+      "Phone: 🇸🇪(+46)760372563",
     phone:
       "Email: jonas.luundholm@gmail.com",
   },
