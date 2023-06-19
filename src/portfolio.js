@@ -460,7 +460,7 @@ const contactPageData = {
     subtitle: "Email: jonas.luundholm@gmail.com",
   },
   phoneSection: {
-    subtitle: "Phone: 🇸🇪+46760372563",
+    subtitle: "Phone: 🇸🇪(+46)760372563",
   },
 };
 
