@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactMeButton.css";
+import { contactInfo } from "../../portfolio";
 
 const onMouseEnter = (event, color, bgColor) => {
   const el = event.target;
@@ -24,8 +25,9 @@ export default function ContactMeButton({
     <div className={className}>
       <a
         class="contact-me-button"
-        href={href}
-        target={newTab && "_blank"}
+        href={"mailto:" + contactInfo.email_address}
+        target="_blank"
+        rel="noopener noreferrer"
         style={{
           color: theme.body,
           backgroundColor: theme.text,

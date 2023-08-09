@@ -37,12 +37,12 @@ export default class Main extends Component {
                 <Contact {...props} theme={this.props.theme} />
               )}
             />
-            <Route
+            {/* <Route
               path="/projects"
               render={(props) => (
                 <Projects {...props} theme={this.props.theme} />
               )}
-            />
+            /> */}
           </Switch>
         </HashRouter>
       </>

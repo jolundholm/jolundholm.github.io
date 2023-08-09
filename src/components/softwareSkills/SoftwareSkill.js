@@ -7,16 +7,9 @@ class SoftwareSkill extends React.Component {
     return (
       <div>
         <div className="software-skills-main-div">
-          <ul className="dev-icons">
-            {/* {skillsSection.softwareSkills.map(skills => {
+          {this.props.logos.map((logo) => {
             return (
-              <li className="software-skill-inline" name={skills.skillName}>
-                <i className={skills.fontAwesomeClassname}></i>
-              </li>
-            );
-          })} */}
-            {this.props.logos.map((logo) => {
-              return (
+              <div className="dev-icons">
                 <OverlayTrigger
                   key={logo.skillName}
                   placement={"top"}
@@ -45,9 +38,10 @@ class SoftwareSkill extends React.Component {
                     )}
                   </li>
                 </OverlayTrigger>
-              );
-            })}
-          </ul>
+              </div>
+            );
+          })}
+          {/* </ul> */}
         </div>
       </div>
     );
