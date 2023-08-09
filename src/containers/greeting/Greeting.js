@@ -25,7 +25,7 @@ export default function Greeting(props) {
                   ( {greeting.nickname} )
                 </h2>
               )}
-              <h2
+              <p
                 className="greeting-text-p subTitle"
                 style={{
                   color: theme.secondaryText,
@@ -33,7 +33,7 @@ export default function Greeting(props) {
                 }}
               >
                 {greeting.subTitle}
-              </h2>
+              </p>
               <ContactMeButton
                 className={"contact-me-button-div"}
                 text={"Get in touch"}
