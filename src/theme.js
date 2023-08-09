@@ -195,4 +195,22 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blueTheme;
+export const myCustomTheme = {
+  // Branched off from materialTealTheme
+  body: "#22333b",
+  logo: "#40916c",
+  text: "#ffffff",
+  titleFontSize: "8rem",
+  subTitleFontSize: "4rem",
+  expTxtColor: "#000000",
+  highlight: "#a1dded",
+  dark: "#07292c",
+  secondaryText: "#ffffff",
+  imageHighlight: "#0a343c",
+  compImgHighlight: "#E1E2E1",
+  jacketColor: "#E1E2E1",
+  headerColor: "#E1E2E1",
+  splashBg: "#05505E",
+};
+
+export const chosenTheme = myCustomTheme;

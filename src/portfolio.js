@@ -13,36 +13,34 @@ const seo = {
   og: {
     title: "Jonas Lundholm Portfolio",
     type: "website",
-    url: "https://jonas.lundholm.com/",
+    url: "https://jlundholm.com",
   },
 };
 
 //Home Page
 const greeting = {
-  title: "Jonas Lundholm",
-  logo_name: "JonasLundholm",
+  title: "Hi.",
+  logo_name: "</>",
   nickname: "",
-  subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+  subTitle: "I'm Jonas. I build awesome things on the internet",
   resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
-  portfolio_repository: "https://github.com/jolundholm/masterPortfolio",
-  githubProfile: "https://github.com/jolundholm",
+  portfolio_repository: "https://github.com/jlundholm-portfolio",
+  githubProfile: "https://github.com/jlundholm-portfolio",
 };
 
 const socialMediaLinks = [
-
   {
     name: "Github",
-    link: "https://github.com/jolundholm",
-    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
-    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+    link: "https://github.com/jlundholm-portfolio",
+    fontAwesomeIcon: "fa-github",
+    backgroundColor: "#181717",
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/jonaslundholm/",
-    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
+    fontAwesomeIcon: "fa-linkedin-in",
+    backgroundColor: "#0077B5",
   },
   // {
   //   name: "YouTube",
@@ -52,9 +50,9 @@ const socialMediaLinks = [
   // },
   {
     name: "Gmail",
-    link: "mailto:jonas.luundholm@gmail.com",
-    fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
-    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
+    link: "mailto:jonas@jlundholm.com",
+    fontAwesomeIcon: "fa-google",
+    backgroundColor: "#D14836",
   },
   // {
   //   name: "Twitter",
@@ -435,27 +433,20 @@ const projectsHeader = {
   avatar_image_path: "projects_image.svg",
 };
 
-const publicationsHeader = {
-};
+const publicationsHeader = {};
 
-const publications = {
-};
+const publications = {};
 
 // Contact Page
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
     profile_image_path: "animated_ashutosh.png",
-    email:
-      "Phone: 🇸🇪(+46)760372563",
-    phone:
-      "Email: jonas.luundholm@gmail.com",
+    email: "Phone: 🇸🇪(+46)760372563",
+    phone: "Email: jonas.luundholm@gmail.com",
   },
-  blogSection: {
-
-  },
-  addressSection: {
-  },
+  blogSection: {},
+  addressSection: {},
   emailSection: {
     subtitle: "Email: jonas.luundholm@gmail.com",
   },

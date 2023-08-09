@@ -25,18 +25,16 @@ class Header extends Component {
         <div>
           <header className="header">
             <NavLink to={link} tag={Link} className="logo">
-              <span style={{ color: theme.text }}> &lt;</span>
-              <span className="logo-name" style={{ color: theme.text }}>
+              <span className="logo-name" style={{ color: theme.logo }}>
                 {greeting.logo_name}
               </span>
-              <span style={{ color: theme.text }}>/&gt;</span>
             </NavLink>
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
               <span className="navicon"></span>
             </label>
             <ul className="menu" style={{ backgroundColor: theme.body }}>
-              <li>
+              {/* <li>
                 <NavLink
                   to="/home"
                   tag={Link}
@@ -47,7 +45,7 @@ class Header extends Component {
                 >
                   Home
                 </NavLink>
-              </li>
+              </li> */}
               {/* <li>
                 <NavLink
                   to="/education"
@@ -78,7 +76,7 @@ class Header extends Component {
                   to="/projects"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
+                  style={{ color: theme.text, fontSize: "1.5rem" }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
@@ -103,7 +101,7 @@ class Header extends Component {
                   to="/contact"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
+                  style={{ color: theme.text, fontSize: "1.5rem" }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
