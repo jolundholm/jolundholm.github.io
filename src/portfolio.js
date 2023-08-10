@@ -7,11 +7,11 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Jonas Portfolio",
+  title: "Jonas Lundholm",
   description:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   og: {
-    title: "Jonas Lundholm Portfolio",
+    title: "Jonas Lundholm",
     type: "website",
     url: "https://jlundholm.com",
   },
