@@ -81,9 +81,9 @@ const skills = {
       imageAlign: "left",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "⚡ Building responsive frontend websites using React",
+        "⚡ Developing mobile applications using React Native",
+        "⚡ Creating application backend in Node and Spring Boot",
       ],
       softwareSkills: [
         {
@@ -116,6 +116,13 @@ const skills = {
           },
         },
         {
+          skillName: "Java",
+          fontAwesomeClassname: "simple-icons:java",
+          style: {
+            color: "#FF0000",
+          },
+        },
+        {
           skillName: "ReactJS",
           fontAwesomeClassname: "simple-icons:react",
           style: {
@@ -125,6 +132,13 @@ const skills = {
         {
           skillName: "NodeJS",
           fontAwesomeClassname: "simple-icons:node-dot-js",
+          style: {
+            color: "#339933",
+          },
+        },
+        {
+          skillName: "Spring Boot",
+          fontAwesomeClassname: "simple-icons:spring",
           style: {
             color: "#339933",
           },
@@ -164,19 +178,11 @@ const skills = {
       imageAlign: "right",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "⚡ Hosting and maintaing your web applications",
+        "⚡ Manage and develope cloud solutions using Terrform",
+        "⚡ Automate build and deployment workflows using Github Actions",
       ],
       softwareSkills: [
-        {
-          skillName: "GCP",
-          fontAwesomeClassname: "simple-icons:googlecloud",
-          style: {
-            color: "#4285F4",
-          },
-        },
         {
           skillName: "AWS",
           fontAwesomeClassname: "simple-icons:amazonaws",
@@ -185,31 +191,17 @@ const skills = {
           },
         },
         {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
+          skillName: "Terraform",
+          fontAwesomeClassname: "simple-icons:terraform",
           style: {
-            color: "#0089D6",
+            color: "#7B42BC",
           },
         },
         {
-          skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
-          style: {
-            color: "#FFCA28",
-          },
-        },
-        {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
           style: {
             color: "#336791",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
           },
         },
         {
@@ -220,10 +212,10 @@ const skills = {
           },
         },
         {
-          skillName: "Kubernetes",
-          fontAwesomeClassname: "simple-icons:kubernetes",
+          skillName: "Github Actions",
+          fontAwesomeClassname: "simple-icons:github",
           style: {
-            color: "#326CE5",
+            color: "#ffffff",
           },
         },
       ],
