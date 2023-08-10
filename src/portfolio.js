@@ -29,6 +29,10 @@ const greeting = {
   githubProfile: "https://github.com/jlundholm-portfolio",
 };
 
+const aboutMe = {
+  description: "In 2015 I hello I ",
+};
+
 const socialMediaLinks = [
   {
     name: "Github",
@@ -83,7 +87,7 @@ const skills = {
       skills: [
         "⚡ Building responsive frontend websites using React",
         "⚡ Developing mobile applications using React Native",
-        "⚡ Creating application backend in Node and Spring Boot",
+        "⚡ Creating application backend in Node and Java using Spring Boot",
       ],
       softwareSkills: [
         {
@@ -179,7 +183,7 @@ const skills = {
       fileName: "CloudInfraImg",
       skills: [
         "⚡ Hosting and maintaing your web applications",
-        "⚡ Manage and develope cloud solutions using Terrform",
+        "⚡ Manage and develop cloud solutions using Terraform",
         "⚡ Automate build and deployment workflows using Github Actions",
       ],
       softwareSkills: [
@@ -374,6 +378,7 @@ export {
   settings,
   seo,
   greeting,
+  aboutMe,
   socialMediaLinks,
   skills,
   competitiveSites,

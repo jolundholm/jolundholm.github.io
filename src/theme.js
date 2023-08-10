@@ -202,6 +202,8 @@ export const myCustomTheme = {
   text: "#ffffff",
   titleFontSize: "8rem",
   subTitleFontSize: "3.7rem",
+  descriptionTitleFontSize: "2rem",
+  descriptionFontSize: "1.65rem",
   expTxtColor: "#000000",
   highlight: "#a1dded",
   dark: "#07292c",

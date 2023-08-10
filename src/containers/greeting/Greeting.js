@@ -1,7 +1,5 @@
 import React from "react";
 import "./Greeting.css";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
-import ContactMeButton from "../../components/contactMeButton/ContactMeButton";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 
@@ -33,13 +31,6 @@ export default function Greeting(props) {
               >
                 {greeting.subTitle}
               </p>
-              <ContactMeButton
-                className={"contact-me-button-div"}
-                text={"Get in touch"}
-                theme={theme}
-              />
-
-              <SocialMedia theme={theme} />
               {/* <div className="button-greeting-div">
               <Button text="Contact me" href="#contact" />
               <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
