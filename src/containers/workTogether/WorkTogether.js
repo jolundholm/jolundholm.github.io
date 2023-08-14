@@ -14,7 +14,7 @@ export default function WorkTogether(props) {
         </h3>
         <div className="worktogether-description" style={{ color: theme.text }}>
           <p>
-            I'm available for fully remote projects, but happy to meet over your
+            I'm available for fully remote projects and happy to meet over your
             favourite video meeting app.
           </p>
           <ContactMeButton

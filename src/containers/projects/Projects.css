@@ -4,6 +4,11 @@
   line-height: normal;
 }
 
+.projects-text {
+  text-align: left;
+  font-size: 1.6rem;
+}
+
 .startup-project-text img {
   max-width: 100%;
   height: auto;

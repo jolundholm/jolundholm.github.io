@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./Skills.css";
+import "./Projects.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import { skills } from "../../portfolio";
+import { projects } from "../../portfolio";
 import { Fade } from "react-reveal";
 import DataScienceImg from "./DataScienceImg";
 import FullStackImg from "./FullStackImg";
@@ -18,30 +18,36 @@ function GetSkillSvg(props) {
   return <DesignImg theme={props.theme} />;
 }
 
-class SkillSection extends Component {
+class ProjectSection extends Component {
   render() {
     const theme = this.props.theme;
     return (
       <div>
-        {skills.data.map((skill) => {
+        {projects.data.map((project) => {
           return (
             <div className="skills-main-div">
-              <Fade left duration={2000}>
-                <div className="skills-image-div">
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
-                </div>
-              </Fade>
-
+              {project.imageAlign === "left" && (
+                <Fade left duration={500}>
+                  <div className="skills-image-div">
+                    <GetSkillSvg fileName={project.fileName} theme={theme} />
+                  </div>
+                </Fade>
+              )}
               <div className="skills-text-div">
-                <Fade right duration={1000}>
+                <Fade right duration={500}>
                   <h1 className="skills-heading" style={{ color: theme.text }}>
-                    {skill.title}
+                    {project.title}
                   </h1>
                 </Fade>
-                <Fade right duration={1500}>
-                  <SoftwareSkill logos={skill.softwareSkills} />
+                <Fade right duration={500}>
+                  <h1 className="projects-text" style={{ color: theme.text }}>
+                    {project.description}
+                  </h1>
                 </Fade>
-                <Fade right duration={2000}>
+                {/* <Fade right duration={500}>
+                  <SoftwareSkill logos={skill.softwareSkills} />
+                </Fade> */}
+                {/* <Fade right duration={500}>
                   <div>
                     {skill.skills.map((skillSentence) => {
                       return (
@@ -54,8 +60,15 @@ class SkillSection extends Component {
                       );
                     })}
                   </div>
-                </Fade>
+                </Fade> */}
               </div>
+              {project.imageAlign === "right" && (
+                <Fade left duration={500}>
+                  <div className="skills-image-div">
+                    <GetSkillSvg fileName={project.fileName} theme={theme} />
+                  </div>
+                </Fade>
+              )}
             </div>
           );
         })}
@@ -64,4 +77,4 @@ class SkillSection extends Component {
   }
 }
 
-export default SkillSection;
+export default ProjectSection;

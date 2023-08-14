@@ -18,7 +18,7 @@ const onMouseOut = (event) => {
 class Header extends Component {
   render() {
     const theme = this.props.theme;
-    const link = settings.isSplash ? "/splash" : "home";
+    const link = settings.isSplash ? "/splash" : "/";
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
@@ -96,7 +96,7 @@ class Header extends Component {
                   Open Source
                 </NavLink>
               </li> */}
-              <li>
+              {/* <li>
                 <NavLink
                   to="/contact"
                   tag={Link}
@@ -107,7 +107,7 @@ class Header extends Component {
                 >
                   Contact Me
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </header>
         </div>

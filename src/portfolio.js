@@ -78,6 +78,156 @@ const socialMediaLinks = [
   // },
 ];
 
+const projects = {
+  data: [
+    {
+      title: "Svenska Bostäder",
+      description: "Proof of concept web application",
+      imageAlign: "left",
+      fileName: "FullStackImg",
+      skills: [
+        "⚡ Building responsive frontend websites using React",
+        "⚡ Developing mobile applications using React Native",
+        "⚡ Creating application backend in Node and Java using Spring Boot",
+      ],
+      softwareSkills: [
+        {
+          skillName: "HTML5",
+          fontAwesomeClassname: "simple-icons:html5",
+          style: {
+            color: "#E34F26",
+          },
+        },
+        {
+          skillName: "CSS3",
+          fontAwesomeClassname: "fa-css3",
+          style: {
+            color: "#1572B6",
+          },
+        },
+        // {
+        //   skillName: "Sass",
+        //   fontAwesomeClassname: "simple-icons:sass",
+        //   style: {
+        //     color: "#CC6699",
+        //   },
+        // },
+        {
+          skillName: "JavaScript",
+          fontAwesomeClassname: "simple-icons:javascript",
+          style: {
+            backgroundColor: "#000000",
+            color: "#F7DF1E",
+          },
+        },
+        {
+          skillName: "Java",
+          fontAwesomeClassname: "simple-icons:java",
+          style: {
+            color: "#FF0000",
+          },
+        },
+        {
+          skillName: "ReactJS",
+          fontAwesomeClassname: "simple-icons:react",
+          style: {
+            color: "#61DAFB",
+          },
+        },
+        {
+          skillName: "NodeJS",
+          fontAwesomeClassname: "simple-icons:node-dot-js",
+          style: {
+            color: "#339933",
+          },
+        },
+        {
+          skillName: "Spring Boot",
+          fontAwesomeClassname: "simple-icons:spring",
+          style: {
+            color: "#339933",
+          },
+        },
+        {
+          skillName: "NPM",
+          fontAwesomeClassname: "simple-icons:npm",
+          style: {
+            color: "#CB3837",
+          },
+        },
+        {
+          skillName: "Yarn",
+          fontAwesomeClassname: "simple-icons:yarn",
+          style: {
+            color: "#2C8EBB",
+          },
+        },
+        // {
+        //   skillName: "Gatsby",
+        //   fontAwesomeClassname: "simple-icons:gatsby",
+        //   style: {
+        //     color: "#663399",
+        //   },
+        // },
+        // {
+        //   skillName: "Flutter",
+        //   fontAwesomeClassname: "simple-icons:flutter",
+        //   style: {
+        //     color: "#02569B",
+        //   },
+        // },
+      ],
+    },
+    {
+      title: "Cloud Infra-Architecture",
+      imageAlign: "right",
+      fileName: "CloudInfraImg",
+      skills: [
+        "⚡ Hosting and maintaing your web applications",
+        "⚡ Manage and develop cloud solutions using Terraform",
+        "⚡ Automate build and deployment workflows using Github Actions",
+      ],
+      softwareSkills: [
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "simple-icons:amazonaws",
+          style: {
+            color: "#FF9900",
+          },
+        },
+        {
+          skillName: "Terraform",
+          fontAwesomeClassname: "simple-icons:terraform",
+          style: {
+            color: "#7B42BC",
+          },
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
+          style: {
+            color: "#336791",
+          },
+        },
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "simple-icons:docker",
+          style: {
+            color: "#1488C6",
+          },
+        },
+        {
+          skillName: "Github Actions",
+          fontAwesomeClassname: "simple-icons:github",
+          style: {
+            color: "#ffffff",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 const skills = {
   data: [
     {
@@ -381,6 +531,7 @@ export {
   aboutMe,
   socialMediaLinks,
   skills,
+  projects,
   competitiveSites,
   degrees,
   certifications,

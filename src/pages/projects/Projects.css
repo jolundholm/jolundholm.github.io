@@ -1,3 +1,13 @@
+.projects-main-div {
+  display: flex;
+  overflow: hidden;
+}
+
+.projects-main-div > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
 .projects-main {
   width: 100%;
   text-align: center;
@@ -86,6 +96,10 @@
 }
 
 @media (max-width: 768px) {
+  .projects-main-div {
+    flex-direction: column;
+  }
+
   .projects-heading-text,
   .publications-heading-text {
     font-size: 30px;
