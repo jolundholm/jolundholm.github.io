@@ -82,7 +82,8 @@ const projects = {
   data: [
     {
       title: "East West Gallery",
-      description: "Landing page for a fictional art gallery",
+      description: "Landing page for a fictional art gallery.",
+      url: "art-gallery-demo.jlundholm.com",
       descriptionHtml: `
         <div>
           <h1>Title</h1>
@@ -127,53 +128,53 @@ const projects = {
         },
       ],
     },
-    {
-      title: "Cloud Infra-Architecture",
-      imageAlign: "right",
-      fileName: "CloudInfraImg",
-      skills: [
-        "⚡ Hosting and maintaing your web applications",
-        "⚡ Manage and develop cloud solutions using Terraform",
-        "⚡ Automate build and deployment workflows using Github Actions",
-      ],
-      softwareSkills: [
-        {
-          skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
-          style: {
-            color: "#FF9900",
-          },
-        },
-        {
-          skillName: "Terraform",
-          fontAwesomeClassname: "simple-icons:terraform",
-          style: {
-            color: "#7B42BC",
-          },
-        },
-        {
-          skillName: "MySQL",
-          fontAwesomeClassname: "simple-icons:mysql",
-          style: {
-            color: "#336791",
-          },
-        },
-        {
-          skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
-          style: {
-            color: "#1488C6",
-          },
-        },
-        {
-          skillName: "Github Actions",
-          fontAwesomeClassname: "simple-icons:github",
-          style: {
-            color: "#ffffff",
-          },
-        },
-      ],
-    },
+    // {
+    //   title: "Cloud Infra-Architecture",
+    //   imageAlign: "right",
+    //   fileName: "CloudInfraImg",
+    //   skills: [
+    //     "⚡ Hosting and maintaing your web applications",
+    //     "⚡ Manage and develop cloud solutions using Terraform",
+    //     "⚡ Automate build and deployment workflows using Github Actions",
+    //   ],
+    //   softwareSkills: [
+    //     {
+    //       skillName: "AWS",
+    //       fontAwesomeClassname: "simple-icons:amazonaws",
+    //       style: {
+    //         color: "#FF9900",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Terraform",
+    //       fontAwesomeClassname: "simple-icons:terraform",
+    //       style: {
+    //         color: "#7B42BC",
+    //       },
+    //     },
+    //     {
+    //       skillName: "MySQL",
+    //       fontAwesomeClassname: "simple-icons:mysql",
+    //       style: {
+    //         color: "#336791",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Docker",
+    //       fontAwesomeClassname: "simple-icons:docker",
+    //       style: {
+    //         color: "#1488C6",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Github Actions",
+    //       fontAwesomeClassname: "simple-icons:github",
+    //       style: {
+    //         color: "#ffffff",
+    //       },
+    //     },
+    //   ],
+    // },
   ],
 };
 

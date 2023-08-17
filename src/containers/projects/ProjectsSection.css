@@ -1,12 +1,14 @@
-.projects-main-div {
+.projects-heading-mobile {
+  display: none;
 }
 
-.projects-heading {
+.projects-heading-desktop {
   font-size: 4rem;
   font-weight: 400;
 }
 
 .projects-text {
+  margin: 1.5rem 0rem 0rem;
   flex: 1;
   text-align: left;
   font-size: 1.5rem;
@@ -58,11 +60,28 @@
   }
 }
 @media (max-width: 768px) {
+  .projects-heading-desktop {
+    display: none;
+  }
+
+  .projects-link {
+    margin: 0rem 0rem 1rem;
+  }
+
+  .projects-text {
+    margin: 0rem 0rem 2rem;
+  }
+
+  .projects-heading-mobile {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem 0rem;
+    font-size: 4rem;
+    font-weight: 400;
+  }
+
   .project-title {
     font-size: 30px;
     text-align: center;
-  }
-  .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }

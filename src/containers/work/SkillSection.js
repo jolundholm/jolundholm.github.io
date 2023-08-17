@@ -8,16 +8,6 @@ import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
 
-function GetSkillSvg(props) {
-  if (props.fileName === "DataScienceImg")
-    return <DataScienceImg theme={props.theme} />;
-  else if (props.fileName === "FullStackImg")
-    return <FullStackImg theme={props.theme} />;
-  else if (props.fileName === "CloudInfraImg")
-    return <CloudInfraImg theme={props.theme} />;
-  return <DesignImg theme={props.theme} />;
-}
-
 class SkillSection extends Component {
   render() {
     const theme = this.props.theme;
@@ -26,13 +16,6 @@ class SkillSection extends Component {
         {skills.data.map((skill) => {
           return (
             <div className="skills-main-div">
-              {skill.imageAlign === "left" && (
-                <Fade left duration={500}>
-                  <div className="skills-image-div">
-                    <GetSkillSvg fileName={skill.fileName} theme={theme} />
-                  </div>
-                </Fade>
-              )}
               <div className="skills-text-div">
                 <Fade right duration={500}>
                   <h1 className="skills-heading" style={{ color: theme.text }}>
@@ -57,13 +40,6 @@ class SkillSection extends Component {
                   </div>
                 </Fade>
               </div>
-              {skill.imageAlign === "right" && (
-                <Fade left duration={500}>
-                  <div className="skills-image-div">
-                    <GetSkillSvg fileName={skill.fileName} theme={theme} />
-                  </div>
-                </Fade>
-              )}
             </div>
           );
         })}

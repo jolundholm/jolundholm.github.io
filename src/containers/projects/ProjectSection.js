@@ -3,22 +3,7 @@ import "./ProjectsSection.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { projects } from "../../portfolio";
 import { Fade } from "react-reveal";
-import DataScienceImg from "./DataScienceImg";
-import FullStackImg from "./FullStackImg";
 import EastWestImg from "./EastWestImg";
-import CloudInfraImg from "./CloudInfraImg";
-
-import DesignImg from "./DesignImg";
-
-function GetSkillSvg(props) {
-  if (props.fileName === "DataScienceImg")
-    return <DataScienceImg theme={props.theme} />;
-  else if (props.fileName === "FullStackImg")
-    return <FullStackImg theme={props.theme} />;
-  else if (props.fileName === "CloudInfraImg")
-    return <CloudInfraImg theme={props.theme} />;
-  return <DesignImg theme={props.theme} />;
-}
 
 class ProjectSection extends Component {
   render() {
@@ -30,24 +15,37 @@ class ProjectSection extends Component {
             <div className="projects-main-div">
               {project.imageAlign === "left" && (
                 <div className="projects-image-div">
+                  <h1
+                    className="projects-heading-mobile"
+                    style={{ color: theme.text }}
+                  >
+                    {" "}
+                    {/* For mobile we want the project heading to show up before the image*/}
+                    {project.title}
+                  </h1>
                   <EastWestImg />
                 </div>
               )}
               <div className="projects-text-div">
-                <h1 className="projects-heading" style={{ color: theme.text }}>
+                <h1
+                  className="projects-heading-desktop"
+                  style={{ color: theme.text }}
+                >
+                  {" "}
+                  {/* For desktop we want the project heading to show up after the image*/}
                   {project.title}
                 </h1>
                 <a
                   className="projects-link"
                   href={"https://art-gallery-demo.jlundholm.com/"}
                 >
-                  art-gallery-demo.jlundholm.com
+                  {project.url}
                 </a>
 
                 <Fade right duration={500}>
-                  <h1 className="projects-text" style={{ color: theme.text }}>
+                  <span className="projects-text" style={{ color: theme.text }}>
                     {project.description}
-                  </h1>
+                  </span>
                 </Fade>
                 <Fade right duration={500}>
                   <div className="projects-links-and-software-skills-container">
@@ -57,13 +55,13 @@ class ProjectSection extends Component {
                   </div>
                 </Fade>
               </div>
-              {project.imageAlign === "right" && (
+              {/* {project.imageAlign === "right" && (
                 <Fade left duration={500}>
                   <div className="projects-image-div">
                     <GetSkillSvg fileName={project.fileName} theme={theme} />
                   </div>
                 </Fade>
-              )}
+              )} */}
             </div>
           );
         })}

@@ -16,7 +16,7 @@
 .projects-header {
   font-size: 4rem;
   font-family: "Poppins Light";
-  margin: 0rem 0rem 10rem;
+  margin: 0rem 0rem 5rem;
 }
 
 .projects-image-div > * {
@@ -82,6 +82,11 @@
 }
 
 @media (max-width: 1380px) {
+  .projects-header {
+    font-size: 4rem;
+    margin: 0rem 0rem 0rem;
+  }
+
   .projects-heading-text {
     font-size: 50px;
     margin-top: 80px;
@@ -116,5 +121,16 @@
     margin-left: 0px;
     line-height: normal;
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-header {
+    font-size: 4rem;
+    margin: 0rem 0rem 1rem;
+  }
+
+  .projects-main-div {
+    margin: 0rem 0rem 1rem;
   }
 }
