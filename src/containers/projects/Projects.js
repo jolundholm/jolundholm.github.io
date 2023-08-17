@@ -6,8 +6,8 @@ import { Fade } from "react-reveal";
 export default function Projects(props) {
   const theme = props.theme;
   return (
-    <div className="main" id="skills">
-      <div className="skills-header-div">
+    <div className="main">
+      <div className="projects-header-div">
         <Fade bottom duration={500} distance="20px">
           <h1 className="projects-header" style={{ color: theme.text }}>
             Projects
