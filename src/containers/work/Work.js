@@ -8,7 +8,7 @@ export default function Work(props) {
   return (
     <div className="main" id="work">
       <div>
-        <Fade bottom duration={500} distance="20px">
+        <Fade>
           <h1 className="work-header" style={{ color: theme.text }}>
             Ways I can help you
           </h1>

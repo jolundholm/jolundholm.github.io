@@ -99,7 +99,7 @@ const work = {
       description: "Landing page for a fictional art gallery.",
       descriptionHtml: `
         <p>You have an idea for your next app but want someone to help you build it.</p>
-        <p>With 5+ years of experience in frontend, backend, database and cloud hosting I'm a one-stop shop for taking your idea from idea to launch</p>
+        <p>With 5+ years of experience in frontend, backend, database and cloud infrastructure I'm a one-stop shop for taking your idea from idea to launch</p>
       `,
       imageAlign: "right",
       skills: [],

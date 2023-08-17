@@ -6,12 +6,13 @@ import Contact from "../pages/contact/ContactComponent";
 import ProjectsPage from "../pages/projects/ProjectsPage";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
+import { HashRouter } from "react-router-dom/cjs/react-router-dom.min";
 
 export default class Main extends Component {
   render() {
     return (
       <>
-        <BrowserRouter basename="/">
+        <HashRouter basename="/">
           <Switch>
             <Route
               path="/"
@@ -42,7 +43,7 @@ export default class Main extends Component {
               )}
             />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </>
     );
   }
