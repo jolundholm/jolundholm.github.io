@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Projects.css";
+import "./ProjectsSection.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { projects } from "../../portfolio";
 import { Fade } from "react-reveal";
@@ -27,28 +27,27 @@ class ProjectSection extends Component {
       <div>
         {projects.data.map((project) => {
           return (
-            <div className="skills-main-div">
+            <div className="projects-main-div">
               {project.imageAlign === "left" && (
-                <Fade left duration={500}>
-                  <div className="skills-image-div">
-                    <EastWestImg />
-                  </div>
-                </Fade>
+                <div className="projects-image-div">
+                  <EastWestImg />
+                </div>
               )}
-              <div className="skills-text-div">
-                <Fade right duration={500}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
-                    {project.title}
-                  </h1>
-                </Fade>
+              <div className="projects-text-div">
+                <h1 className="projects-heading" style={{ color: theme.text }}>
+                  {project.title}
+                </h1>
+
                 <Fade right duration={500}>
                   <h1 className="projects-text" style={{ color: theme.text }}>
                     {project.description}
                   </h1>
                 </Fade>
-                {/* <Fade right duration={500}>
-                  <SoftwareSkill logos={skill.softwareSkills} />
-                </Fade> */}
+                <Fade right duration={500}>
+                  <div className="projects-software-skills-container">
+                    <SoftwareSkill logos={project.softwareSkills} />
+                  </div>
+                </Fade>
                 {/* <Fade right duration={500}>
                   <div>
                     {skill.skills.map((skillSentence) => {

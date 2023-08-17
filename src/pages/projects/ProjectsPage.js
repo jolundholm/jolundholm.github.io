@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Projects from "../../containers/projects/Projects";
-import "./Projects.css";
 
 class ProjectsPage extends Component {
   render() {

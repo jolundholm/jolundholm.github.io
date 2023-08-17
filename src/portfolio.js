@@ -83,6 +83,12 @@ const projects = {
     {
       title: "East West Gallery",
       description: "Proof of concept web application",
+      descriptionHtml: `
+        <div>
+          <h1>Title</h1>
+          <p>Some text here</p>
+        </div>
+      `,
       imageAlign: "left",
       skills: [
         "⚡ Building responsive frontend websites using React",
@@ -104,13 +110,6 @@ const projects = {
             color: "#1572B6",
           },
         },
-        // {
-        //   skillName: "Sass",
-        //   fontAwesomeClassname: "simple-icons:sass",
-        //   style: {
-        //     color: "#CC6699",
-        //   },
-        // },
         {
           skillName: "JavaScript",
           fontAwesomeClassname: "simple-icons:javascript",
@@ -120,61 +119,12 @@ const projects = {
           },
         },
         {
-          skillName: "Java",
-          fontAwesomeClassname: "simple-icons:java",
-          style: {
-            color: "#FF0000",
-          },
-        },
-        {
           skillName: "ReactJS",
           fontAwesomeClassname: "simple-icons:react",
           style: {
             color: "#61DAFB",
           },
         },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "Spring Boot",
-          fontAwesomeClassname: "simple-icons:spring",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
-          style: {
-            color: "#2C8EBB",
-          },
-        },
-        // {
-        //   skillName: "Gatsby",
-        //   fontAwesomeClassname: "simple-icons:gatsby",
-        //   style: {
-        //     color: "#663399",
-        //   },
-        // },
-        // {
-        //   skillName: "Flutter",
-        //   fontAwesomeClassname: "simple-icons:flutter",
-        //   style: {
-        //     color: "#02569B",
-        //   },
-        // },
       ],
     },
     {

@@ -1,3 +1,8 @@
+.software-skills-main-div {
+  display: flex;
+  flex-direction: row;
+}
+
 .dev-icons {
   padding-left: 0;
   list-style: none;

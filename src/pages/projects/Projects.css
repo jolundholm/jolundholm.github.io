@@ -13,6 +13,15 @@
   text-align: center;
 }
 
+.projects-image-div > * {
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+.projects-text-div {
+  margin: 20px;
+}
+
 .basic-projects {
   margin-left: 5%;
   margin-right: 5%;
@@ -20,25 +29,6 @@
 
 .projects-heading-div {
   display: flex;
-}
-
-.projects-heading-div > * {
-  flex: 1;
-}
-
-.projects-heading-img-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.projects-heading-text-div {
-  text-align: center;
-}
-
-.projects-heading-img-div > * {
-  max-width: 100%;
-  height: auto;
 }
 
 .projects-heading-text {
@@ -120,12 +110,5 @@
     margin-left: 0px;
     line-height: normal;
     text-align: center;
-  }
-
-  .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
   }
 }
