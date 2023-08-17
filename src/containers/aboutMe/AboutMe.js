@@ -1,88 +1,58 @@
-import React from "react";
+import React, { Component } from "react";
 import "./AboutMe.css";
+import { aboutMe } from "../../portfolio";
 import { Fade } from "react-reveal";
+import Image from "../../components/image/Image.js";
 
-export default function AboutMe(props) {
-  const theme = props.theme;
-  return (
-    <Fade bottom duration={500} distance="40px">
-      <div className="aboutme-main" id="aboutme">
-        <div className="aboutme-main">
-          {/* <p
-            className="aboutme-description"
-            style={{ color: theme.text, fontSize: theme.descriptionFontSize }}
-          >
-            I'm a full-stack developer based outside of Stockholm, Sweden 🇸🇪
-          </p> */}
-          {/* <div
-            style={{
-              fontSize: "1.5rem",
-            }}
-          >
-            ⚕️ Cloud and automation work for
-            <a
-              style={{
-                color: "#ffffff",
-                fontSize: "2rem",
-                border: "1px solid white",
-                textDecoration: "none",
-                backgroundColor: "#002845",
-                borderRadius: "1em",
-                padding: "0rem 1rem 0rem 1rem",
-                margin: "1rem 0.5rem 1rem 0.5rem",
-              }}
-              href="https://kry.se"
+class AboutMe extends Component {
+  render() {
+    const theme = this.props.theme;
+    return (
+      <div>
+        <div className="projects-main-div">
+          <div className="projects-image-div">
+            <h1
+              className="projects-heading-mobile"
+              style={{ color: theme.text }}
             >
-              Kry
-            </a>
-            (2022-Current)
+              {/* For mobile we want the project heading to show up before the image*/}
+              {aboutMe.title}
+            </h1>
+            <Image src={require("../../assets/images/aboutMe/jonas.webp")} />
           </div>
-          <div
-            style={{
-              fontSize: "1.5rem",
-            }}
-          >
-            🚚 Last-mile delivery solutions for
-            <a
-              style={{
-                color: "#ffffff",
-                fontSize: "2rem",
-                textDecoration: "none",
-                backgroundColor: "#41CDA5",
-                borderRadius: "1em",
-                padding: "0rem 1rem 0rem 1rem",
-                margin: "1rem 0.5rem 1rem 0.5rem",
-              }}
-              href="https://budbee.com"
+          <div className="projects-text-div">
+            <h1
+              className="projects-heading-desktop"
+              style={{ color: theme.text }}
             >
-              Budbee
+              {" "}
+              {/* For desktop we want the project heading to show up after the image*/}
+              {aboutMe.title}
+            </h1>
+            <a
+              className="projects-link"
+              href={"https://art-gallery-demo.jlundholm.com/"}
+            >
+              {aboutMe.url}
             </a>
-            (2019-2022)
+
+            <Fade right duration={500}>
+              <span className="projects-text" style={{ color: theme.text }}>
+                {aboutMe.description}
+              </span>
+            </Fade>
           </div>
-          <div
-            style={{
-              fontSize: "1.5rem",
-            }}
-          >
-            💵 Point-of-sales system for
-            <a
-              style={{
-                color: "#000000",
-                fontSize: "2rem",
-                textDecoration: "none",
-                backgroundColor: "#71E6AF",
-                borderRadius: "1em",
-                padding: "0rem 1rem 0rem 1rem",
-                margin: "1rem 0.5rem 1rem 0.5rem",
-              }}
-              href="https://yabie.com"
-            >
-              Yabie
-            </a>
-            (2016-2019)
-          </div> */}
+          {/* {project.imageAlign === "right" && (
+              <Fade left duration={500}>
+                <div className="projects-image-div">
+                  <GetSkillSvg fileName={project.fileName} theme={theme} />
+                </div>
+              </Fade>
+            )} */}
         </div>
       </div>
-    </Fade>
-  );
+    );
+  }
 }
+
+export default AboutMe;

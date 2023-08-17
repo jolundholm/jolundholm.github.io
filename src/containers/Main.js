@@ -7,6 +7,7 @@ import ProjectsPage from "../pages/projects/ProjectsPage";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
 import { HashRouter } from "react-router-dom/cjs/react-router-dom.min";
+import AboutMePage from "../pages/aboutMe/AboutMePage";
 
 export default class Main extends Component {
   render() {
@@ -40,6 +41,12 @@ export default class Main extends Component {
               path="/projects"
               render={(props) => (
                 <ProjectsPage {...props} theme={this.props.theme} />
+              )}
+            />
+            <Route
+              path="/about"
+              render={(props) => (
+                <AboutMePage {...props} theme={this.props.theme} />
               )}
             />
           </Switch>

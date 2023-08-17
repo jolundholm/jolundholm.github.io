@@ -30,7 +30,8 @@ const greeting = {
 };
 
 const aboutMe = {
-  description: "In 2015 I hello I ",
+  title: "Hello",
+  description: "",
 };
 
 const socialMediaLinks = [
