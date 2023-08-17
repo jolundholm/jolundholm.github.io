@@ -11,9 +11,9 @@ class SoftwareSkill extends React.Component {
             <div className="dev-icons">
               <OverlayTrigger
                 key={logo.skillName}
-                placement={"top"}
+                placement={"bottom"}
                 overlay={
-                  <Tooltip id={`tooltip-top`}>
+                  <Tooltip id={`tooltip-bottom`}>
                     <strong>{logo.skillName}</strong>
                   </Tooltip>
                 }

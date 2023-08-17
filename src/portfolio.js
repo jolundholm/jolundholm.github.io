@@ -82,7 +82,7 @@ const projects = {
   data: [
     {
       title: "East West Gallery",
-      description: "Proof of concept web application",
+      description: "Landing page for a fictional art gallery",
       descriptionHtml: `
         <div>
           <h1>Title</h1>

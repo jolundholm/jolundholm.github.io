@@ -40,6 +40,22 @@
   src: local("Google Sans Regular"),
     url("./assets/fonts/GoogleSans-Regular.ttf") format("woff");
 }
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./assets/fonts/Roboto-Black.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("./assets/fonts/Poppins-Black.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins Light";
+  src: local("Poppins Light"),
+    url("./assets/fonts/Poppins-Light.otf") format("woff");
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

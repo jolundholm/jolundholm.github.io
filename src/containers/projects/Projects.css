@@ -13,6 +13,12 @@
   text-align: center;
 }
 
+.projects-header {
+  font-size: 4rem;
+  font-family: "Poppins Light";
+  margin: 0rem 0rem 10rem;
+}
+
 .projects-image-div > * {
   max-width: 100%;
   margin-top: 100px;

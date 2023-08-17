@@ -37,6 +37,12 @@ class ProjectSection extends Component {
                 <h1 className="projects-heading" style={{ color: theme.text }}>
                   {project.title}
                 </h1>
+                <a
+                  className="projects-link"
+                  href={"https://art-gallery-demo.jlundholm.com/"}
+                >
+                  art-gallery-demo.jlundholm.com
+                </a>
 
                 <Fade right duration={500}>
                   <h1 className="projects-text" style={{ color: theme.text }}>
@@ -44,28 +50,16 @@ class ProjectSection extends Component {
                   </h1>
                 </Fade>
                 <Fade right duration={500}>
-                  <div className="projects-software-skills-container">
-                    <SoftwareSkill logos={project.softwareSkills} />
+                  <div className="projects-links-and-software-skills-container">
+                    <div className="software-skills-container">
+                      <SoftwareSkill logos={project.softwareSkills} />
+                    </div>
                   </div>
                 </Fade>
-                {/* <Fade right duration={500}>
-                  <div>
-                    {skill.skills.map((skillSentence) => {
-                      return (
-                        <p
-                          className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
-                        >
-                          {skillSentence}
-                        </p>
-                      );
-                    })}
-                  </div>
-                </Fade> */}
               </div>
               {project.imageAlign === "right" && (
                 <Fade left duration={500}>
-                  <div className="skills-image-div">
+                  <div className="projects-image-div">
                     <GetSkillSvg fileName={project.fileName} theme={theme} />
                   </div>
                 </Fade>
