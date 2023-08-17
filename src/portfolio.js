@@ -78,6 +78,36 @@ const socialMediaLinks = [
   // },
 ];
 
+const work = {
+  data: [
+    {
+      id: 1,
+      title: "Build an awesome landing page",
+      description: "Landing page for a fictional art gallery.",
+      url: "art-gallery-demo.jlundholm.com",
+      descriptionHtml: `
+        <p>You're building a business, hosting an event or drumming up interest for your next product launch, whichever it is we're gonna need a website</p>
+        <p>I'll help you design, build and host a fast-loading website that will look great on multiple browsers</p>
+      `,
+      imageAlign: "left",
+      skills: [],
+      softwareSkills: [],
+    },
+    {
+      id: 2,
+      title: "Develop web applications",
+      description: "Landing page for a fictional art gallery.",
+      descriptionHtml: `
+        <p>You have an idea for your next app but want someone to help you build it.</p>
+        <p>With 5+ years of experience in frontend, backend, database and cloud hosting I'm a one-stop shop for taking your idea from idea to launch</p>
+      `,
+      imageAlign: "right",
+      skills: [],
+      softwareSkills: [],
+    },
+  ],
+};
+
 const projects = {
   data: [
     {
@@ -91,11 +121,7 @@ const projects = {
         </div>
       `,
       imageAlign: "left",
-      skills: [
-        "⚡ Building responsive frontend websites using React",
-        "⚡ Developing mobile applications using React Native",
-        "⚡ Creating application backend in Node and Java using Spring Boot",
-      ],
+      skills: ["⚡ Building responsive frontend websites using React"],
       softwareSkills: [
         {
           skillName: "HTML5",
@@ -501,4 +527,5 @@ export {
   publicationsHeader,
   publications,
   contactPageData,
+  work,
 };

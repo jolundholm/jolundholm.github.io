@@ -48,13 +48,6 @@ class ProjectSection extends Component {
                     {project.description}
                   </span>
                 </Fade>
-                <Fade right duration={500}>
-                  <div className="projects-links-and-software-skills-container">
-                    <div className="software-skills-container">
-                      <SoftwareSkill logos={project.softwareSkills} />
-                    </div>
-                  </div>
-                </Fade>
               </div>
               {/* {project.imageAlign === "right" && (
                 <Fade left duration={500}>
