@@ -181,12 +181,23 @@ const projects = {
 const skills = {
   data: [
     {
-      title: "Full Stack Development",
+      title: "Build a Landing Page for your business",
       imageAlign: "left",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive frontend websites using React",
-        "⚡ Developing mobile applications using React Native",
+        "⚡ Building responsive and performant websites using React",
+        "⚡ Develop APIs and integrate with 3rd party APIs",
+        "⚡ Creating application backend in Node and Java using Spring Boot",
+      ],
+      softwareSkills: [],
+    },
+    {
+      title: "Full Stack Development",
+      imageAlign: "right",
+      fileName: "FullStackImg",
+      skills: [
+        "⚡ Building responsive and performant websites using React",
+        "⚡ Develop APIs and integrate with 3rd party APIs",
         "⚡ Creating application backend in Node and Java using Spring Boot",
       ],
       softwareSkills: [

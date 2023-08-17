@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import "./ProjectsSection.css";
+import "./WorkSection.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { projects } from "../../portfolio";
 import { Fade } from "react-reveal";
 import Image from "../../components/image/Image.js";
 
-class ProjectSection extends Component {
+class WorkSection extends Component {
   render() {
     const theme = this.props.theme;
     return (
       <div>
         {projects.data.map((project) => {
           return (
-            <div className="projects-main-div">
+            <div className="work-main-div">
               {project.imageAlign === "left" && (
                 <div className="projects-image-div">
                   <h1
@@ -39,14 +39,21 @@ class ProjectSection extends Component {
                 <a
                   className="projects-link"
                   href={"https://art-gallery-demo.jlundholm.com/"}
-                >
-                  {project.url}
-                </a>
+                ></a>
 
                 <Fade right duration={500}>
-                  <span className="projects-text" style={{ color: theme.text }}>
-                    {project.description}
-                  </span>
+                  <div>
+                    {project.skills.map((skillSentence) => {
+                      return (
+                        <p
+                          className="subTitle skills-text"
+                          style={{ color: theme.secondaryText }}
+                        >
+                          {skillSentence}
+                        </p>
+                      );
+                    })}
+                  </div>
                 </Fade>
                 <Fade right duration={500}>
                   <div className="projects-links-and-software-skills-container">
@@ -56,13 +63,6 @@ class ProjectSection extends Component {
                   </div>
                 </Fade>
               </div>
-              {/* {project.imageAlign === "right" && (
-                <Fade left duration={500}>
-                  <div className="projects-image-div">
-                    <GetSkillSvg fileName={project.fileName} theme={theme} />
-                  </div>
-                </Fade>
-              )} */}
             </div>
           );
         })}
@@ -71,4 +71,4 @@ class ProjectSection extends Component {
   }
 }
 
-export default ProjectSection;
+export default WorkSection;

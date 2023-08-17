@@ -8,13 +8,13 @@ export default function AboutMe(props) {
     <Fade bottom duration={500} distance="40px">
       <div className="aboutme-main" id="aboutme">
         <div className="aboutme-main">
-          <p
+          {/* <p
             className="aboutme-description"
             style={{ color: theme.text, fontSize: theme.descriptionFontSize }}
           >
             I'm a full-stack developer based outside of Stockholm, Sweden 🇸🇪
-          </p>
-          <div
+          </p> */}
+          {/* <div
             style={{
               fontSize: "1.5rem",
             }}
@@ -80,7 +80,7 @@ export default function AboutMe(props) {
               Yabie
             </a>
             (2016-2019)
-          </div>
+          </div> */}
         </div>
       </div>
     </Fade>

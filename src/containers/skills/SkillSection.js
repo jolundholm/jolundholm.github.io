@@ -12,6 +12,9 @@ class SkillSection extends Component {
         {skills.data.map((skill) => {
           return (
             <div className="skills-main-div">
+              <Image
+                src={require("../../assets/images/projects/east-west-gallery.webp")}
+              />
               <div className="skills-text-div">
                 <Fade right duration={1000}>
                   <h1 className="skills-heading" style={{ color: theme.text }}>
