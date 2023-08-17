@@ -1,4 +1,5 @@
 .main {
+  display: flex;
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
@@ -89,5 +90,23 @@
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .greeting-text {
+  }
+
+  .greet-main {
+    padding: 0rem 0rem;
+    margin: 0px auto;
+    margin-top: 2rem;
+  }
+
+  .main {
+    display: flex;
+    padding: 0rem 0rem 0rem;
+    margin: 0px auto;
+    margin-top: 4rem;
   }
 }
