@@ -25,7 +25,7 @@ class Contact extends Component {
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
                 <img
-                  src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
+                  src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
                   alt=""
                 />
               </div>
@@ -36,21 +36,20 @@ class Contact extends Component {
                 >
                   {ContactData["title"]}
                 </h1>
-                <div style={{ display: 'flex', justifyContent: 'center'}}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
                   <div>
                     <p
                       className="contact-header-detail-text subTitle"
                       style={{ color: theme.secondaryText }}
                     >
                       {ContactData["email"]}
-                      <br/>
+                      <br />
                       {ContactData["phone"]}
                     </p>
                   </div>
                 </div>
                 <SocialMedia theme={theme} />
-                <div className="resume-btn-div">
-                </div>
+                <div className="resume-btn-div"></div>
               </div>
             </div>
           </Fade>
@@ -66,12 +65,11 @@ class Contact extends Component {
                 >
                   {blogSection["subtitle"]}
                 </p>
-                <div className="blogsite-btn-div">
-                </div>
+                <div className="blogsite-btn-div"></div>
               </div>
               <div className="blog-heading-img-div">
                 {/* <img
-											src={require(`../../assests/images/${blogSection["avatar_image_path"]}`)}
+											src={require(`../../assets/images/${blogSection["avatar_image_path"]}`)}
 											alt=""
 										/> */}
               </div>
@@ -81,7 +79,7 @@ class Contact extends Component {
             <div className="address-heading-div">
               <div className="contact-heading-img-div">
                 {/* <img
-											src={require(`../../assests/images/${addressSection["avatar_image_path"]}`)}
+											src={require(`../../assets/images/${addressSection["avatar_image_path"]}`)}
 											alt=""
 										/> */}
               </div>

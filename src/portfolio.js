@@ -81,10 +81,9 @@ const socialMediaLinks = [
 const projects = {
   data: [
     {
-      title: "Svenska Bostäder",
+      title: "East West Gallery",
       description: "Proof of concept web application",
       imageAlign: "left",
-      fileName: "FullStackImg",
       skills: [
         "⚡ Building responsive frontend websites using React",
         "⚡ Developing mobile applications using React Native",

@@ -23,7 +23,7 @@ class ProjectsPage extends Component {
     {
       /* <div className="projects-heading-img-div">
                 <img
-											src={require(`../../assests/images/${projectsHeader["avatar_image_path"]}`)}
+											src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
 											alt=""
 										/>
                 <ProjectsImg theme={theme} />

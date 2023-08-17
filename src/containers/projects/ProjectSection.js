@@ -5,7 +5,9 @@ import { projects } from "../../portfolio";
 import { Fade } from "react-reveal";
 import DataScienceImg from "./DataScienceImg";
 import FullStackImg from "./FullStackImg";
+import EastWestImg from "./EastWestImg";
 import CloudInfraImg from "./CloudInfraImg";
+
 import DesignImg from "./DesignImg";
 
 function GetSkillSvg(props) {
@@ -29,7 +31,7 @@ class ProjectSection extends Component {
               {project.imageAlign === "left" && (
                 <Fade left duration={500}>
                   <div className="skills-image-div">
-                    <GetSkillSvg fileName={project.fileName} theme={theme} />
+                    <EastWestImg />
                   </div>
                 </Fade>
               )}
