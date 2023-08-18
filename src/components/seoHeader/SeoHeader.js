@@ -9,7 +9,7 @@ import {
   certifications,
 } from "../../portfolio.js";
 
-function SeoHeader() {
+function SeoHeader(props) {
   let sameAs = [];
   socialMediaLinks
     .filter(
@@ -60,10 +60,15 @@ function SeoHeader() {
     },
     hasCredential: credentials,
   };
+  const seoTitle = props.seoTitle;
+  const title = seoTitle ? seoTitle : seo.title;
+
+  const seoDescription = props.seoDescription;
+  const description = seoDescription ? seoDescription : seo.description;
   return (
     <Helmet>
-      <title>{seo.title}</title>
-      <meta name="description" content={seo.description} />
+      <title>{title}</title>
+      <meta name="description" content={seoDescription} />
       <meta property="og:title" content={seo?.og?.title} />
       <meta property="og:type" content={seo?.og?.type} />
       <meta property="og:url" content={seo?.og?.url} />

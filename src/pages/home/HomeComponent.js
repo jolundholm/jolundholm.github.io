@@ -11,10 +11,15 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Header theme={this.props.theme} />
+        <Header
+          theme={this.props.theme}
+          seoTitle={"Home | Jonas Lundholm"}
+          seoDescription={
+            "Jonas Lundholm: Experienced freelance Software Developer focusing on building websites using modern technologies and great web design. With over 5 years in the industry I've worked with multiple startups Based in Stockholm, Sweden. Contact for collaborations and projects."
+          }
+        />
         <Greeting theme={this.props.theme} />
         <Work theme={this.props.theme} />
-        {/* <Skills theme={this.props.theme} /> */}
         <WorkTogether theme={this.props.theme}></WorkTogether>
         <Footer theme={this.props.theme} />
         <TopButton theme={this.props.theme} />

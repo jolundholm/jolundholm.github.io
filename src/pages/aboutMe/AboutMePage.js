@@ -8,7 +8,13 @@ class AboutMePage extends Component {
     const theme = this.props.theme;
     return (
       <div className="projects-main">
-        <Header theme={theme} />
+        <Header
+          theme={theme}
+          seoTitle={"About Me | Jonas Lundholm"}
+          seoDescription={
+            "Jonas Lundholm | Experienced Software Developer and Freelancer from Stockholm, Sweden"
+          }
+        />
         <AboutMe theme={theme} />
         <Footer theme={theme} />
       </div>

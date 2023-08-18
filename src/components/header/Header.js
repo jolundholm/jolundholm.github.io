@@ -19,9 +19,11 @@ class Header extends Component {
   render() {
     const theme = this.props.theme;
     const link = settings.isSplash ? "/splash" : "/";
+    const seoTitle = this.props.seoTitle;
+    const seoDescription = this.props.seoDescription;
     return (
       <Fade top duration={1000} distance="20px">
-        <SeoHeader />
+        <SeoHeader seoTitle={seoTitle} seoDescription={seoDescription} />
         <div>
           <header className="header">
             <NavLink to={link} tag={Link} className="logo">
