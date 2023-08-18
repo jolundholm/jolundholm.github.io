@@ -25,8 +25,8 @@ const greeting = {
   subTitle: "I'm Jonas. I help people build great things on the internet",
   resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
-  portfolio_repository: "https://github.com/jlundholm-portfolio",
-  githubProfile: "https://github.com/jlundholm-portfolio",
+  portfolio_repository: "https://github.com/jlundholm-git",
+  githubProfile: "https://github.com/jlundholm-git",
 };
 
 const aboutMe = {
@@ -42,7 +42,7 @@ const aboutMe = {
 const socialMediaLinks = [
   {
     name: "Github",
-    link: "https://github.com/jlundholm-portfolio",
+    link: "https://github.com/jlundholm-git",
     fontAwesomeIcon: "fa-github",
     backgroundColor: "#181717",
   },
