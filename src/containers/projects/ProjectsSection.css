@@ -83,6 +83,7 @@
 
   .projects-heading-mobile {
     display: flex;
+    justify-content: center;
     margin: 2rem 0rem 0rem;
     font-size: 4rem;
     font-weight: 400;

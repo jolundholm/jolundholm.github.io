@@ -15,13 +15,13 @@ class ProjectSection extends Component {
             <div className="projects-main-div">
               {project.imageAlign === "left" && (
                 <div className="projects-image-div">
-                  <h1
+                  <span
                     className="projects-heading-mobile"
                     style={{ color: theme.text }}
                   >
                     {/* For mobile we want the project heading to show up before the image*/}
                     {project.title}
-                  </h1>
+                  </span>
                   <Image
                     src={require("../../assets/images/projects/east-west-gallery.webp")}
                   />
