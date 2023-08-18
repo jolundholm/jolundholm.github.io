@@ -9,7 +9,7 @@ class ProjectSection extends Component {
   render() {
     const theme = this.props.theme;
     return (
-      <div>
+      <>
         {projects.data.map((project) => {
           return (
             <div className="projects-main-div">
@@ -28,25 +28,26 @@ class ProjectSection extends Component {
                 </div>
               )}
               <div className="projects-text-div">
-                <h1
-                  className="projects-heading-desktop"
-                  style={{ color: theme.text }}
-                >
+                <span className="projects-heading-desktop">
                   {" "}
                   {/* For desktop we want the project heading to show up after the image*/}
                   {project.title}
-                </h1>
-                <a
-                  className="projects-link"
-                  href={"https://art-gallery-demo.jlundholm.com/"}
-                >
-                  {project.url}
+                </span>
+                <a className="projects-link" href={project.url}>
+                  {project.displayUrl}
                 </a>
 
                 <Fade right duration={500}>
                   <span className="projects-text" style={{ color: theme.text }}>
                     {project.description}
                   </span>
+                </Fade>
+                <Fade>
+                  <div className="projects-links-and-software-skills-container">
+                    <div className="software-skills-container">
+                      <SoftwareSkill logos={project.softwareSkills} />
+                    </div>
+                  </div>
                 </Fade>
               </div>
               {/* {project.imageAlign === "right" && (
@@ -59,7 +60,7 @@ class ProjectSection extends Component {
             </div>
           );
         })}
-      </div>
+      </>
     );
   }
 }

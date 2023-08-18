@@ -9,10 +9,10 @@ class AboutMe extends Component {
     const theme = this.props.theme;
     return (
       <div>
-        <div className="projects-main-div">
-          <div className="projects-image-div">
+        <div className="aboutme-main-div">
+          <div className="aboutme-image-div">
             <h1
-              className="projects-heading-mobile"
+              className="aboutme-heading-mobile"
               style={{ color: theme.text }}
             >
               {/* For mobile we want the project heading to show up before the image*/}
@@ -20,35 +20,26 @@ class AboutMe extends Component {
             </h1>
             <Image src={require("../../assets/images/aboutMe/jonas.webp")} />
           </div>
-          <div className="projects-text-div">
-            <h1
-              className="projects-heading-desktop"
-              style={{ color: theme.text }}
-            >
+          <div className="aboutme-text-div">
+            <h1 className="aboutme-heading-desktop">
               {" "}
               {/* For desktop we want the project heading to show up after the image*/}
               {aboutMe.title}
             </h1>
             <a
-              className="projects-link"
+              className="aboutme-link"
               href={"https://art-gallery-demo.jlundholm.com/"}
             >
               {aboutMe.url}
             </a>
 
             <Fade right duration={500}>
-              <span className="projects-text" style={{ color: theme.text }}>
-                {aboutMe.description}
-              </span>
+              <div
+                className="aboutme-description"
+                dangerouslySetInnerHTML={{ __html: aboutMe.descriptionHtml }}
+              />
             </Fade>
           </div>
-          {/* {project.imageAlign === "right" && (
-              <Fade left duration={500}>
-                <div className="projects-image-div">
-                  <GetSkillSvg fileName={project.fileName} theme={theme} />
-                </div>
-              </Fade>
-            )} */}
         </div>
       </div>
     );

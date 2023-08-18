@@ -30,8 +30,13 @@ const greeting = {
 };
 
 const aboutMe = {
-  title: "Hello",
-  description: "",
+  title: "Hi!",
+  descriptionHtml: `
+    <p>My name is Jonas and I'm a 30-something Software Engineer from Sweden 🇸🇪</p>
+    <p>I'm also a bit of a tinker 🛠️ I like the independence of being able to think up cool ideas for products, code them up and knowing how to make them accessible on the internet.</p>
+    <p>After 5+ years of working with the entire software stack at rising star companies like <a class="aboutme-description-link" href="https://budbee.com/">Budbee</a> and 
+      <a class="aboutme-description-link" href="https://kry.se/en">Kry</a> I decided to take the leap and become a freelance developer, and that's where we're at today.
+  `,
 };
 
 const socialMediaLinks = [
@@ -85,7 +90,6 @@ const work = {
       id: 1,
       title: "Build an awesome landing page",
       description: "Landing page for a fictional art gallery.",
-      url: "art-gallery-demo.jlundholm.com",
       descriptionHtml: `
         <p>You're building a business, hosting an event or drumming up interest for your next product launch, whichever it is we're gonna need a website</p>
         <p>I'll help you design, build and host a fast-loading website that will look great on multiple browsers</p>
@@ -97,7 +101,6 @@ const work = {
     {
       id: 2,
       title: "Develop web applications",
-      description: "Landing page for a fictional art gallery.",
       descriptionHtml: `
         <p>You have an idea for your next app but want someone to help you build it.</p>
         <p>With 5+ years of experience in frontend, backend, database and cloud infrastructure I'm a one-stop shop for taking your idea from idea to launch</p>
@@ -114,7 +117,8 @@ const projects = {
     {
       title: "East West Gallery",
       description: "Landing page for a fictional art gallery.",
-      url: "art-gallery-demo.jlundholm.com",
+      url: "https://art-gallery-demo.jlundholm.com",
+      displayUrl: "art-gallery-demo.jlundholm.com",
       descriptionHtml: `
         <div>
           <h1>Title</h1>

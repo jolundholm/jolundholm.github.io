@@ -1,8 +1,14 @@
+.main {
+  text-align: center;
+}
+
 .projects-heading-mobile {
   display: none;
 }
 
 .projects-heading-desktop {
+  text-align: center;
+  line-height: 1;
   font-size: 4rem;
   font-weight: 400;
 }
@@ -18,7 +24,7 @@
 }
 
 .projects-text {
-  margin: 1.5rem 0rem 0rem;
+  margin: 2rem 0rem 0rem;
   flex: 1;
   text-align: left;
   font-size: 1.5rem;
@@ -28,38 +34,38 @@
 .projects-text-div {
   display: flex;
   flex-direction: column;
-}
-
-.projects-links-and-software-skills-container {
-  display: flex;
-  flex-direction: column;
+  padding: 0rem 2rem 0rem;
 }
 
 .projects-link {
+  margin-top: 1rem;
+  text-align: center;
   text-decoration: none;
   color: white;
-  cursor: pointer;
 }
 
-.projects-text-div {
-}
-
-.projects-image-div {
-}
-
-.software-skills-container {
-  display: flex;
-  justify-content: center;
+.projects-image-div > * {
+  max-width: 100%;
 }
 
 /* Media Query */
 @media (max-width: 1380px) {
-  .project-title {
-    font-size: 40px;
+  .projects-main-div {
   }
 }
+
 @media (max-width: 768px) {
+  .main {
+    text-align: center;
+  }
+
   .projects-main-div {
+    flex-direction: column;
+  }
+
+  .projects-image-div {
+    display: flex;
+    text-align: center;
     flex-direction: column;
   }
 
@@ -77,15 +83,9 @@
 
   .projects-heading-mobile {
     display: flex;
-    justify-content: center;
     margin: 2rem 0rem 0rem;
     font-size: 4rem;
     font-weight: 400;
-  }
-
-  .project-title {
-    font-size: 30px;
-    text-align: center;
   }
 }
 
