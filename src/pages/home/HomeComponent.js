@@ -13,9 +13,9 @@ class Home extends Component {
       <div>
         <Header
           theme={this.props.theme}
-          seoTitle={"Home | Jonas Lundholm"}
+          seoTitle={"Home | Jonas Lundholm - Freelance Software Developer"}
           seoDescription={
-            "Jonas Lundholm: Experienced freelance Software Developer focusing on building websites using modern technologies and great web design. With over 5 years in the industry I've worked with multiple startups Based in Stockholm, Sweden. Contact for collaborations and projects."
+            "Jonas Lundholm is an experienced Freelance Software Developer focusing on building websites using modern technologies and great web design. With over 5 years in the industry I've worked with multiple successful startups"
           }
         />
         <Greeting theme={this.props.theme} />
